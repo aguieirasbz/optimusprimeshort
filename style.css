@@ -1,0 +1,23 @@
+/* style.css - visual simples e responsivo */
+:root{
+  --bg:#fbfbfd;
+  --card:#ffffff;
+  --accent:#0b66ff;
+  --muted:#666;
+  --radius:10px;
+}
+
+*{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+body{background:var(--bg);color:#111;margin:0;padding:28px;display:flex;justify-content:center}
+.container{width:100%;max-width:980px;background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(12,18,31,0.06)}
+h1{margin:0 0 12px;font-size:20px}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+select,textarea,input,button{font-size:14px;padding:10px;border:1px solid #e6e9ee;border-radius:8px;outline:none}
+textarea{min-height:140px;resize:vertical;width:100%}
+button{background:var(--accent);color:white;border:none;cursor:pointer}
+button.secondary{background:#f1f5fb;color:#0b66ff;border:1px solid rgba(11,102,255,0.12)}
+.result{margin-top:16px;padding:12px;background:#f8f9fc;border-radius:8px;border:1px solid #eef2ff;white-space:pre-wrap;color:#0b2540}
+.log{margin-top:10px;background:#fff7ed;border-left:4px solid #ffb703;padding:10px;border-radius:6px;color:#5b3b00}
+.small{font-size:13px;color:var(--muted)}
+.row{display:flex;gap:8px;align-items:center}
+@media (max-width:600px){.controls{flex-direction:column}}
